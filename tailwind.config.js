@@ -6,15 +6,16 @@ export default {
   ],
   theme: {
     extend: {
-      // colors: {
-      //   'blue': '#5429CC',
-      //   'green': '#33CC95',
-      //   'red': '#E52E4D',
-      //   'shape-principal': '#FFFFFF',
-      //   'color-title': '#363F5F',
-      //   'color-text': '#969CB2',
-      //   'color-bg': '#F0F2F5'
-      // }
+      colors: {
+        'blue': '#5429CC',
+        'blue-light': '#6933FF',
+        'green': '#33CC95',
+        'red': '#E52E4D',
+        'shape-principal': '#FFFFFF',
+        'color-title': '#363F5F',
+        'color-text': '#969CB2',
+        'color-bg': '#F0F2F5'
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

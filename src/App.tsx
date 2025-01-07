@@ -1,7 +1,7 @@
 export function App() {
   return (
-    <div className="">
-      teste
+    <div className="bg-blue pt-[32px]">
+
     </div>
   )
 }
