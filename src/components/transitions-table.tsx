@@ -1,4 +1,11 @@
+import { useEffect } from "react"
+import { api } from "../services/api"
+
 export function TransitionsTable() {
+  useEffect(() => {
+    api.get('transactions').then(response => console.log(response.data))
+  }, [])
+
   return (
     <div className="max-w-[1120px] mx-auto mt-16">
       <table className="w-full border-separate border-spacing-y-2">
