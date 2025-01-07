@@ -15,7 +15,10 @@ export default {
         'color-title': '#363F5F',
         'color-text': '#969CB2',
         'color-bg': '#F0F2F5'
-      }
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
