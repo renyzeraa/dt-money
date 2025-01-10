@@ -1,8 +1,22 @@
 import incomeSvg from '../assets/income.svg'
 import outcomeSvg from '../assets/outcome.svg'
 import totalSvg from '../assets/total.svg'
+import { useTransactions } from '../hooks/useTransactions'
+import { valorEmReais } from '../utils/formatter'
 
 export function Summary() {
+  const { transactions } = useTransactions()
+  const { deposit, total, withdraw } = transactions.reduce((acc, curr) => {
+    acc.deposit += curr.type === 'deposit' ? curr.value : 0
+    acc.withdraw += curr.type === 'withdraw' ? curr.value : 0
+    acc.total = acc.deposit - acc.withdraw
+    return acc;
+  }, {
+    deposit: 0,
+    withdraw: 0,
+    total: 0
+  })
+
   return (
     <section className='flex justify-between items-center gap-x-8 -mt-28'>
       <div className='px-[32px] text-color-title py-[24px] rounded flex-1 bg-white'>
@@ -11,7 +25,7 @@ export function Summary() {
           <img src={incomeSvg} alt="Entradas" />
         </header>
         <strong className='text-4xl font-medium'>
-          R$ 1.200,00
+          {valorEmReais(deposit)}
         </strong>
       </div>
       <div className='px-[32px] text-color-title py-[24px] rounded flex-1 bg-white'>
@@ -20,7 +34,7 @@ export function Summary() {
           <img src={outcomeSvg} alt="Saídas" />
         </header>
         <strong className='text-4xl font-medium'>
-          - R$ 300,00
+          - {valorEmReais(withdraw)}
         </strong>
       </div>
       <div className='bg-green text-white px-[32px] py-[24px] rounded flex-1'>
@@ -29,7 +43,7 @@ export function Summary() {
           <img src={totalSvg} alt="Total" />
         </header>
         <strong className='text-4xl font-medium'>
-          R$ 900,00
+          {valorEmReais(total)}
         </strong>
       </div>
     </section>
