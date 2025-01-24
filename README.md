@@ -18,6 +18,12 @@ A aplicação foi construída utilizando **React com TypeScript**, estilizada co
 - **Tabela de Transações**: Exibe as transações registradas, com informações sobre a descrição, categoria e data de cada lançamento.
 - **Simulação de Banco de Dados Local**: Utiliza MirageJS para emular um banco de dados e possibilitar a inserção e remoção de dados de maneira prática.
 
+## Layout
+
+![Image](https://github.com/user-attachments/assets/d6e5f4e6-5efa-476a-aaa5-23026f54cbea)
+
+Layout do [figma](https://www.figma.com/design/texk7smNXFb7duBVO8rDze/dtmoney-Ignite?m=auto&t=syT2O86j6ueq60U1-6)
+
 ## Como Rodar o Projeto Localmente
 
 ### 1. Clonar o Repositório
