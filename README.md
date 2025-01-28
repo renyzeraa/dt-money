@@ -29,7 +29,7 @@ Layout do [figma](https://www.figma.com/design/texk7smNXFb7duBVO8rDze/dtmoney-Ig
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/dt-money.git
+git clone https://github.com/renyzeraa/dt-money.git
 ```
 
 ### 2. Instalar Dependências
