@@ -48,8 +48,6 @@ Após a instalação das dependências, execute o seguinte comando para rodar a 
 npm run dev
 ```
 
-<a href="https://app-dt-money-eight.vercel.app/"> Deploy 🚀 </a>
-
 ---
 
 Se você tiver alguma dúvida ou sugestão, entre em contato e sinta-se à vontade para contribuir !
